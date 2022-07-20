@@ -12,13 +12,42 @@ class ComputertTest {
 
 	@Test
 	void on() {
-		fail("Not yet implemented");
-	}
+		Computer computer = new Computer();
 
+		computer.on();
+	}
+	
+	@Test
+	void onAndOff() {
+		Computer computer = new Computer();
+
+		computer.on();
+		computer.off();
+	}
+	
 	@Test
 	void off() {
-		fail("Not yet implemented");
+		Computer computer = new Computer();
+
+		computer.off();
 	}
+	
+	@Test
+	void onAndSleep() {
+		Computer computer = new Computer();
+
+		computer.on();
+		
+		computer.sleep();
+	}
+	
+	@Test
+	void sleep() {
+		Computer computer = new Computer();
+
+		computer.sleep();
+	}
+	
 	
 	@Test
 	void lauchSoftware() {
