@@ -13,5 +13,8 @@ public class OperationSystem {
 		throw new NotWritedMethodException();
 	}
 	
+	public void start(Hardware hardware) { 
+		hardware.start(cpuLoad,	gpuLoad, ramLoad);
+	}
 	
 }

@@ -111,4 +111,8 @@ public enum LoadPercent {
 		this.percent = percent;
 	}
 	
+	public int value() {
+		return percent;
+	}
+	
 }

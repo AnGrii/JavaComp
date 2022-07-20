@@ -11,7 +11,7 @@ public class Computer {
 		
 	
 	public void on() throws NotWritedMethodException {
-		throw new NotWritedMethodException();
+		operationSystem.start(hardware);
 	}
 	
 	public void off() throws NotWritedMethodException {
