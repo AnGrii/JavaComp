@@ -13,8 +13,5 @@ public class OperationSystem {
 		throw new NotWritedMethodException();
 	}
 	
-	private void stockLoad(Hardware hardware) {
-		hardware.stockLoad(cpuLoad, gpuLoad, ramLoad);
-	}
 	
 }

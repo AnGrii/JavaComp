@@ -9,9 +9,4 @@ public class Hardware {
 	CoolingSystem coolingSystem;
 	PowerSupply powerSulply;
 	
-	public void stockLoad(int cpuLoad, int gpuLoad, int ramLoad) {
-		cpu.stockLoad(cpuLoad);
-		gpu.stockLoad(gpuLoad);
-		ram.stockLoad(ramLoad);
-	}
 }
