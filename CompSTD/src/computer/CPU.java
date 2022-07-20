@@ -1,17 +1,19 @@
 package computer;
 
+import computer.component.ComplexComponent;
 import not_writed_method_error.NotWritedMethodException;
 
-abstract class CPU {
+abstract class CPU extends ComplexComponent {
 
+	public CPU(int powerConsuming, LoadPercent loadPercent) throws NotWritedMethodException {
+		super(powerConsuming, loadPercent);
+		throw new NotWritedMethodException();
+	}
 	private double ggz;
 	private int cores;
 	
 	
-	CPU(double ggz, int cores, int powerConsuming) {
-		this.ggz = ggz;
-		this.cores = cores;
-	}
+
 	
 	
 	

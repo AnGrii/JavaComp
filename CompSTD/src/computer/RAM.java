@@ -1,13 +1,15 @@
 package computer;
 
+import computer.component.ComplexComponent;
 import not_writed_method_error.NotWritedMethodException;
 
-public abstract class RAM {
+public abstract class RAM extends ComplexComponent {
 
-	protected abstract void stockLoad(int ramLoad);
-
-	public void load(LoadPercent ramLoad) throws NotWritedMethodException {
+	public RAM(int powerConsuming, LoadPercent loadPercent) throws NotWritedMethodException {
+		super(powerConsuming, loadPercent);
 		throw new NotWritedMethodException();
 	}
+
+	
 
 }
