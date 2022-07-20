@@ -5,7 +5,7 @@ import computer.LoadPercent;
 import computer.software.Software;
 
 // Git access token: 
-// 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
+// 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
 
 
 public class Main {
