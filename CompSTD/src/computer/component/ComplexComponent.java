@@ -2,16 +2,11 @@ package computer.component;
 
 import computer.LoadPercent;
 
-public abstract class ComplexComponent {
+public abstract class ComplexComponent extends SimpleComponent {
 
-	
-	
-	public ComplexComponent() {
-		
+	public ComplexComponent(int powerConsuming, LoadPercent loadPercent) {
+		super(powerConsuming, loadPercent);
 	}
-	
-	public void load(LoadPercent loadPercent) {
-		
 
-	}
+	public abstract int calcWorkPoints();
 }
