@@ -10,19 +10,19 @@ public class Computer {
 	private OperationSystem operationSystem;
 		
 	
-	public void on() {
-		System.err.println("Computer On not writed!");
+	public void on() throws NotWritedMethodException {
+		throw new NotWritedMethodException();
 	}
 	
-	public void off() {
-		System.err.println("Computer Off not writed!");
+	public void off() throws NotWritedMethodException {
+		throw new NotWritedMethodException();
 	}
 	
-	public void sleep() {
-		System.err.println("Computer Sleep not writed!");
+	public void sleep() throws NotWritedMethodException {
+		throw new NotWritedMethodException();
 	}
 	
-	public void startSoftware(Software software) {
+	public void lauchSoftware(Software software) {
 		try {
 			OperationSystem.work(software);
 		} catch (NotWritedMethodException e) {

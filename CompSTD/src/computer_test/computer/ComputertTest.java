@@ -29,7 +29,7 @@ class ComputertTest {
 
 		Software renderPhoto = new Software(1000, 2500, 1500, LoadPercent.load5);
 
-		computer.startSoftware(renderPhoto);
+		computer.lauchSoftware(renderPhoto);
 
 		computer.off();
 	}

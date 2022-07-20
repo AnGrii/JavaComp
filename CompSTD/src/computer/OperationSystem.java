@@ -5,9 +5,9 @@ import not_writed_method_error.NotWritedMethodException;
 
 public class OperationSystem {
 
-	private final int cpuLoad = 2;
-	private final int gpuLoad = 1;
-	private final int ramLoad = 5;
+	private LoadPercent cpuLoad = LoadPercent.load2;
+	private LoadPercent gpuLoad = LoadPercent.load1;
+	private LoadPercent ramLoad = LoadPercent.load5;
 	
 	public static void work(Software software) throws NotWritedMethodException {
 		throw new NotWritedMethodException();
