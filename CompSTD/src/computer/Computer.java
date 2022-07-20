@@ -1,26 +1,33 @@
 package computer;
 
+import computer.software.Software;
+import not_writed_method_error.NotWritedMethodException;
 
 public class Computer {
 	
-	Hardware hardware;
-	WorkStatus workStatus;
-	OperationSystem operationSystem;
+	private Hardware hardware;
+	private WorkStatus workStatus;
+	private OperationSystem operationSystem;
+		
 	
-	public void On() {
+	public void on() {
 		System.err.println("Computer On not writed!");
 	}
 	
-	public void Off() {
+	public void off() {
 		System.err.println("Computer Off not writed!");
 	}
 	
-	public void Sleep() {
+	public void sleep() {
 		System.err.println("Computer Sleep not writed!");
 	}
 	
-	public void Work(Software software) {
-		System.err.println("Computer Work not writed!");
+	public void startSoftware(Software software) {
+		try {
+			OperationSystem.work(software);
+		} catch (NotWritedMethodException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

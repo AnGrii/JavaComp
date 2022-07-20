@@ -1,4 +1,4 @@
-package computer;
+package computer.coolingSystem;
 
 public abstract class CoolingSystem {
 
